@@ -10,27 +10,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="meal-search">
-                    <h2>Find meal for your ingredients</h2>
-                    <blockquote>real food dosen't have ingredieants. real food is ingredieants. <br>
-                        <cite>jammie oliver</cite>
-                    </blockquote>
-                </div>
-                    
-                    
-            </div>
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="search-bar col-md-6 mx-auto">
+          <h1 class="text-center">Cooking master</h1>
+          <div class="search-box my-5 d-flex">
+              <input id="search-field" type="text" class="form-control" placeholder="Find your meal">
+              <button onclick="searchFood()" class="btn btn-success search-btn">Search</button>
+          </div>
+      </div>
+      </div>
+      <div class="row d-flex">
+        <div class="col-md-4">
+          <div id="show-details"></div>
+
         </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="meal-search-box">
-                    <input type="text" class="form-control" placeholder="search your ingredients">
-                    <button class="btn btn-primary"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 
     <script src="script.js"></script>
