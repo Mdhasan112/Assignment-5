@@ -19,14 +19,10 @@ const displayFood = food => {
         <div> ${foods.strMeal} </div>
         <h3> ${foods.strArea}</h3>
         <img src="${foods.strMealThumb}">
-        <button onclick="displayDetails()"> Details</button>
+        
         `;
 
         showDetailDiv.appendChild(div)
     })
     
-}
-
-const displayDetails = details => {
-    console.log(details)
 }
